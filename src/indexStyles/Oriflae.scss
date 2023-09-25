@@ -298,6 +298,7 @@ button {
 }
 
 .showgreen{
+  cursor: pointer;
   z-index: 1000000000000000000000;
   display: block;
   position: fixed;
@@ -307,6 +308,10 @@ button {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+
+  &:hover{
+    background-color: rgb(0, 68, 68);
+  }
 }
 
 .BigCaro {
@@ -780,6 +785,7 @@ li{
           display: flex;
           justify-content: center;
           gap: 6em;
+          text-align: center;
           ul{
             //background: yellow;
               display: flex;
@@ -819,10 +825,36 @@ li{
         display: block;
         line-height: 1.5em;
         margin-top: 0.9em;
+        text-align: center;
       }
 
       .u{
         text-decoration: underline;
+      }
+    }
+  }
+}
+
+.News{
+  .container{
+    text-align: center;
+
+    .imgHolder{
+      margin-bottom: 1em;
+    }
+    .txtHolder{
+      span{
+        font-size: 1.1em;
+        font-weight: 200;
+      }
+      h1{
+        font-size: 2.5em;
+        height: 3.5em;
+      }
+    }
+    .buttonHolder{
+      button{
+        @include baton()
       }
     }
   }
@@ -946,6 +978,7 @@ li{
     }
   }
 }
+
 
 
 @media only screen and (max-width: 530px) {
