@@ -11,6 +11,8 @@ import News from "../components_oriflame/ArticleThumbnail";
 import Footer from "../components_oriflame/Footer";
 
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
 ///
 
 export default function () {
@@ -60,7 +62,12 @@ export default function () {
         </svg>
       </div>
       <NavBar />
-      <div className="oho">
+      <motion.div
+      initial={{ y: -20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
+      className="oho"
+    >
         <Banner />
         <Carousel />
         <LinkBar />
@@ -140,7 +147,8 @@ export default function () {
             <News />
           </div>
         </section>
-      </div>
+        <section></section>
+      </motion.div>
       <Footer />
     </div>
   );
