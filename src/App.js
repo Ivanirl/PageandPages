@@ -6,18 +6,11 @@ import {
 } from "react-router-dom";
 
 import { AnimatePresence } from "framer-motion";
+import DefaultLayout from "./components_oriflame/Layout";
 
-import Home from "./pages/HomePage";
-import PreOrder from "./pages/PreOrder";
-import DefaultLayout from "./components/Layout";
-import Signup from "./pages/SignUp";
-import Browse from "./pages/Browse";
-import Random from "./pages/weirdnewpage";
-
-
-import Oriflame from "./pages/oriflame/Oriflame";
-import Filler from "./pages/oriflame/filler";
-import Filler2 from "./pages/oriflame/filler2";
+import Oriflame from "./pages/Oriflame";
+import Filler from "./pages/filler";
+import Filler2 from "./pages/filler2";
 
 function App() {
   const location = useLocation()
@@ -26,13 +19,7 @@ function App() {
     <DefaultLayout>
       <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route path="/Signup" element={<Signup />}></Route>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/PreOrder" element={<PreOrder />}></Route>
-        <Route path="/browse" element={<Browse />}></Route>
-        <Route path="/rando" element={<Random />}></Route>
-
-        <Route path="/oriflame" element={<Oriflame />}></Route>
+        <Route path="/" element={<Oriflame />}></Route>
         <Route path="/filler" element={<Filler />}></Route>
         <Route path="/filler2" element={<Filler2 />}></Route>
       </Routes>

@@ -1,4 +1,4 @@
-import NavBar from "../../components_oriflame/navbar";
+import NavBar from "../components_oriflame/navbar";
 
 export default function Filler2() {
   return (

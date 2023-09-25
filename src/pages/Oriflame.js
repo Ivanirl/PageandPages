@@ -1,14 +1,14 @@
-import head from "../../Resources/Head.JPG";
-import beauty from "../../Resources/BeautyBeauty.png";
+import head from "../Resources/Head.JPG";
+import beauty from "../Resources/BeautyBeauty.png";
 
-import NavBar from "../../components_oriflame/navbar";
-import Banner from "../../components_oriflame/Banner";
-import Carousel from "../../components_oriflame/Carousel";
-import LinkBar from "../../components_oriflame/Category_links";
-import CardA from "../../components_oriflame/productcardA";
-import Split from "../../components_oriflame/SplitBanner";
-import News from "../../components_oriflame/ArticleThumbnail";
-import Footer from "../../components_oriflame/Footer";
+import NavBar from "../components_oriflame/navbar";
+import Banner from "../components_oriflame/Banner";
+import Carousel from "../components_oriflame/Carousel";
+import LinkBar from "../components_oriflame/Category_links";
+import CardA from "../components_oriflame/productcardA";
+import Split from "../components_oriflame/SplitBanner";
+import News from "../components_oriflame/ArticleThumbnail";
+import Footer from "../components_oriflame/Footer";
 
 import { useState, useEffect } from "react";
 ///

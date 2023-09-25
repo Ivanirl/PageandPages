@@ -1,266 +1,50 @@
-h1,
-span,
-p,
-h2 {
-  cursor: default;
-}
-
-.BoxBox {
-  margin: 0;
-  border-radius: 1em;
-  padding: 1em 10px;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.BoxBox:hover {
-  box-shadow: 0px 17px 18px #e4e4e4;
-}
-.BoxBox .smaller-box .top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 23em;
-  margin-bottom: 1.2em;
-}
-.BoxBox .smaller-box .top img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 1px 4px 8px #8b8b8b;
-}
-.BoxBox .smaller-box .bottom {
-  display: flex;
-  flex-direction: column;
-}
-.BoxBox .smaller-box .bottom .one {
-  display: flex;
-  justify-content: space-between;
-}
-.BoxBox .smaller-box .bottom .one .left {
-  display: flex;
-  flex-direction: column;
-}
-.BoxBox .smaller-box .bottom .one .left .big {
-  font-size: 1.2em;
-  font-weight: 100;
-}
-.BoxBox .smaller-box .bottom .one .left .small {
-  font-size: 1em;
-}
-.BoxBox .smaller-box .bottom .one .left .red {
-  color: red;
-  font-size: 0.8em;
-}
-.BoxBox .smaller-box .bottom .one .right {
-  font-weight: 100;
-  font-size: 1.2em;
-}
-.BoxBox .smaller-box .bottom .two {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.BoxBox .smaller-box .bottom .two .left .color-box {
-  display: flex;
-  justify-content: space-between;
-  gap: 4px;
-  align-items: center;
-}
-.BoxBox .smaller-box .bottom .two .left .color-box .circle {
-  width: 1.1em;
-  height: 1.1em;
-  border-radius: 50%;
-}
-.BoxBox .smaller-box .bottom .two .left .color-box .R {
-  background-color: red;
-}
-.BoxBox .smaller-box .bottom .two .left .color-box .B {
-  background-color: blue;
-}
-.BoxBox .smaller-box .bottom .two .left .color-box .A {
-  background-color: #383838;
-}
-.BoxBox .smaller-box .bottom .two .right button {
-  opacity: 0.8;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-weight: bold;
-  padding: 9px 11px;
-  font-size: 0.8em;
-  border: solid rgb(59, 59, 59) 2px;
-  background: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: ease-in-out 0.2s;
-}
-.BoxBox .smaller-box .bottom .two .right button:hover {
-  opacity: 1;
-  color: rgb(255, 255, 255);
-  background: rgb(49, 49, 49);
-}
-.BoxBox .smaller-box .bottom .two .right button:active {
-  opacity: 1;
-  color: rgb(32, 32, 32);
-  background: none;
-}
-
-.visibleO {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #000;
-  z-index: 2000990;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.visibleO .cardi {
-  background: #e4e4e4;
-  border-radius: 12px;
-  padding: 3em 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.visibleO .cardi button {
-  opacity: 0.8;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-weight: bold;
-  padding: 9px 11px;
-  font-size: 0.8em;
-  border: solid rgb(59, 59, 59) 2px;
-  background: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: ease-in-out 0.2s;
-}
-.visibleO .cardi button:hover {
-  opacity: 1;
-  color: rgb(255, 255, 255);
-  background: rgb(49, 49, 49);
-}
-.visibleO .cardi button:active {
-  opacity: 1;
-  color: rgb(32, 32, 32);
-  background: none;
-}
-
-.invisibleO {
-  display: none;
-}
-
 * {
   font-family: "Centra", sans-serif !important;
   box-sizing: border-box;
   list-style: none;
-  transition: all 0.8s ease;
-  text-align: center;
+  color: rgb(37, 37, 37);
+  transition: all 0.2s ease;
 }
 
-.Price {
-  padding: 4em 1em;
-  background: #272727;
-  text-align: center;
-  border-radius: 10px;
-  margin-bottom: 4em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  cursor: default;
 }
-.Price span {
-  display: block;
-  align-items: center;
-  margin-top: 4px;
-  color: white;
-  max-width: 14em;
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  font-weight: 300;
+  scroll-behavior: smooth;
+  transition: ease 0.2s;
+  font-size: 0.8em;
 }
-.Price .pricy {
-  padding: 0 1.9em;
+
+a {
+  text-decoration: none;
 }
-.Price .pricy h1 {
-  margin-top: 0;
+
+@font-face {
+  font-family: Centra;
+  src: url(../Resources/font/CentraNo2-Bold.ttf);
   font-weight: 100;
-  font-size: 2em;
-  color: white;
 }
-.Price .pricy div {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 4px;
+@font-face {
+  font-family: Centra;
+  src: url(../Resources/font/CentraNo2-Medium.ttf);
+  font-weight: 200;
 }
-.Price .pricy div .para, .Price .pricy div .sub {
-  font-size: 1em;
+@font-face {
+  font-family: Centra;
+  src: url(../Resources/font/CentraNo2-Book.ttf);
+  font-weight: 300;
 }
-.Price:hover {
-  scale: 1.1;
-  box-shadow: 0px 17px 18px #e4e4e4;
-}
-
-li {
-  cursor: pointer;
-}
-
-.Footer {
-  background-color: rgb(22, 22, 22);
-  width: 100%;
-  padding: 1.7em 3em;
-}
-.Footer * {
-  color: rgb(219, 219, 219);
-}
-.Footer .container {
-  display: flex;
-  justify-content: space-between;
-}
-.Footer .container .left {
-  display: flex;
-  flex-direction: column;
-}
-.Footer .container .right {
-  display: flex;
-  gap: 1em;
-}
-.Footer .container .right ul {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  gap: 4px;
-}
-.Footer .container .right ul span {
-  font-size: 1.1em;
-  font-weight: 100;
-  margin-bottom: 5px;
-}
-.Footer .container .right ul li {
-  font-size: 0.9em;
-}
-
-.swarm {
-  padding: 2em;
-  text-align: right;
-}
-.swarm span {
-  display: block;
-  text-align: center;
-}
-.swarm .oui table tr {
-  margin: 30px;
-}
-
-* {
-  transition: ease 0.2;
-}
-
 .Nav {
   padding: 0.5em 3.1em;
   padding-bottom: 0;
@@ -530,6 +314,7 @@ button {
 }
 
 .CardA {
+  cursor: pointer;
   margin: 0;
   border-radius: 1em;
   padding: 1em 10px;
@@ -618,6 +403,11 @@ button {
 }
 .wnsection .header {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2em;
 }
 .wnsection .header h1 {
   letter-spacing: 1px;
@@ -635,7 +425,7 @@ button {
   cursor: pointer;
   transition: ease-in-out 0.2s;
   position: absolute;
-  top: 0;
+  top: 2em;
   right: 4em;
 }
 .wnsection .header button:hover {
@@ -721,7 +511,7 @@ button {
   cursor: pointer;
   transition: ease-in-out 0.2s;
   position: absolute;
-  top: 0;
+  top: 2em;
   left: 5em;
 }
 .horsy .header button:hover {
@@ -889,7 +679,7 @@ button {
   font-size: 1.1em;
 }
 .Bb .header button {
-  top: 3em;
+  top: 4em;
 }
 
 .Be {
@@ -897,6 +687,7 @@ button {
 }
 .Be .header {
   display: block;
+  text-align: center;
 }
 .Be .header .img {
   display: block;
@@ -1020,6 +811,7 @@ button {
   justify-content: center;
   padding: 1.7em 3em;
   width: 100%;
+  text-align: center;
 }
 .Footsy .containerT .right {
   display: flex;
@@ -1066,495 +858,6 @@ button {
 }
 .Footsy .containerB .float .u {
   text-decoration: underline;
-}
-
-@font-face {
-  font-family: Centra;
-  src: url(../Resources/font/CentraNo2-Bold.ttf);
-  font-weight: 100;
-}
-@font-face {
-  font-family: Centra;
-  src: url(../Resources/font/CentraNo2-Medium.ttf);
-  font-weight: 200;
-}
-@font-face {
-  font-family: Centra;
-  src: url(../Resources/font/CentraNo2-Book.ttf);
-  font-weight: 300;
-}
-* {
-  font-family: "Centra", sans-serif !important;
-  box-sizing: border-box;
-  list-style: none;
-  color: rgb(37, 37, 37);
-  transition: all 0.2s ease;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  cursor: default;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  background-color: #f5f5f5;
-  font-weight: 300;
-  scroll-behavior: smooth;
-  transition: ease 0.2s;
-  font-size: 0.8em;
-}
-
-a {
-  text-decoration: none;
-}
-
-.NavBar {
-  padding: 1em 3.1em;
-  display: block;
-  position: fixed;
-  width: 100%;
-  z-index: 10000;
-  background-color: #f5f5f5;
-}
-.NavBar .container {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 0.1em;
-  padding-right: 1.3em;
-}
-.NavBar .container .rightboy {
-  display: flex;
-  justify-content: space-between;
-  gap: 11em;
-}
-.NavBar .container .rightboy .logo {
-  padding: 0;
-  padding-top: 5px;
-  display: flex;
-  align-items: center;
-}
-.NavBar .container .rightboy .logo .logoimage {
-  width: 10em;
-}
-.NavBar .container .closedNav {
-  cursor: pointer;
-  color: rgb(37, 37, 37);
-  display: flex;
-  gap: 8em;
-  font-weight: lighter;
-}
-.NavBar .container .getstarted {
-  display: flex;
-  align-items: center;
-  gap: 2em;
-  transition: ease-in-out 2s;
-}
-.NavBar .container .getstarted .getStarted {
-  width: -moz-fit-content;
-  width: fit-content;
-  font-weight: bold;
-  padding: 10px 20px;
-  font-size: 1em;
-  border: solid rgb(91, 92, 92) 2px;
-  background: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: ease-in-out 0.2s;
-  font-weight: lighter;
-  border: none;
-  transition: linear 0.2s;
-  opacity: 0.7;
-}
-.NavBar .container .getstarted .getStarted:hover {
-  opacity: 1;
-  color: black;
-  background: aliceblue;
-}
-.NavBar .container .getstarted .getStarted:active {
-  opacity: 1;
-  color: white;
-  background: none;
-}
-.NavBar .container .getstarted .getStarted:hover {
-  opacity: 1;
-  color: rgb(37, 37, 37);
-  background: none;
-}
-
-.mens {
-  display: none;
-}
-
-.womens {
-  display: none;
-}
-
-button {
-  background: none;
-  border: none;
-  width: -moz-fit-content;
-  width: fit-content;
-  cursor: pointer;
-}
-
-.navbar-link {
-  opacity: 0.6;
-  transition: 0.1s ease-in-out;
-}
-.navbar-link:hover {
-  opacity: 1;
-}
-
-.inactive {
-  opacity: 0.7;
-}
-
-.active {
-  opacity: 1;
-  padding: 1.4px 2px;
-}
-
-.SignUp {
-  padding: 2em;
-  padding-top: 5em;
-  font-size: 1.2em;
-}
-.SignUp .body {
-  padding: 1em;
-  display: flex;
-  justify-content: right;
-}
-.SignUp .body .Quote {
-  position: absolute;
-  top: -5em;
-  left: 1em;
-  z-index: 1000000;
-}
-.SignUp .body .Quote span {
-  color: white;
-  font-size: 2em;
-  margin: 0;
-  line-height: 2em;
-}
-.SignUp .body .Quote h1 {
-  display: flex;
-  align-items: baseline;
-  color: white;
-  font-size: 5em;
-  margin: 0;
-  width: 4em;
-  line-height: 0.8em;
-  text-shadow: 4px 4px 5px #000;
-  transition: all ease 0.4s;
-}
-.SignUp .body .Quote h1:hover {
-  font-size: 5.1em;
-  letter-spacing: 5px;
-}
-.SignUp .body .left {
-  position: absolute;
-  top: -9em;
-  left: 0;
-  background: url("../Resources/Travis.JPG");
-  background-size: 57em;
-  background-position: center;
-  width: 65%;
-  height: 121.8vh;
-}
-.SignUp .body .right {
-  padding: 2em;
-  width: 30%;
-}
-.SignUp .body .right .rootbeer {
-  position: absolute;
-}
-.SignUp .body .right .input-container {
-  text-align: center;
-  position: absolute;
-  top: -3.5em;
-  left: -9em;
-  gap: 1em;
-  background: #f5f5f5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3em;
-  border-radius: 20px;
-  box-shadow: 2px 2px 8px #383838;
-}
-.SignUp .body .right .input-container .descript {
-  box-sizing: content-box;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 2.3em;
-  align-items: center;
-}
-.SignUp .body .right .input-container .descript .header {
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.SignUp .body .right .input-container .descript .header h1 {
-  font-size: 1.9em;
-  margin: 0;
-}
-.SignUp .body .right .input-container .descript .header span {
-  cursor: default;
-  font-size: 0.84em;
-  margin: 0;
-  width: 80%;
-  align-self: center;
-}
-.SignUp .body .right .input-container .descript button {
-  opacity: 0.8;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-weight: bold;
-  padding: 9px 11px;
-  font-size: 0.8em;
-  border: solid rgb(59, 59, 59) 2px;
-  background: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: ease-in-out 0.2s;
-}
-.SignUp .body .right .input-container .descript button:hover {
-  opacity: 1;
-  color: rgb(255, 255, 255);
-  background: rgb(49, 49, 49);
-}
-.SignUp .body .right .input-container .descript button:active {
-  opacity: 1;
-  color: rgb(32, 32, 32);
-  background: none;
-}
-.SignUp .body .right .input-container .seperator {
-  opacity: 0.7;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.SignUp .body .right .input-container .seperator .rectan {
-  margin-top: 4px;
-  width: 5em;
-  height: 2px;
-  background-color: #8d8d8d;
-}
-.SignUp .body .right .input-container .input-field {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.SignUp .body .right .input-container .input-field span {
-  display: block;
-  font-size: 0.8em;
-}
-.SignUp .body .right .input-container .input-field input {
-  text-align: left;
-  border-radius: 9px;
-  height: 2em;
-  border: none;
-  width: 19em;
-  margin: 6px 20px;
-  box-shadow: 2px 2px 8px #8d8d8d;
-  padding: 1.4em;
-}
-.SignUp .body .right .input-container .input-field input:focus {
-  outline: none;
-}
-.SignUp .body .right .input-container .input-field button {
-  opacity: 0.8;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-weight: bold;
-  padding: 9px 11px;
-  font-size: 0.8em;
-  border: solid rgb(59, 59, 59) 2px;
-  background: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: ease-in-out 0.2s;
-  padding: 9px 3em;
-  margin: 20px 0 10px;
-}
-.SignUp .body .right .input-container .input-field button:hover {
-  opacity: 1;
-  color: rgb(255, 255, 255);
-  background: rgb(49, 49, 49);
-}
-.SignUp .body .right .input-container .input-field button:active {
-  opacity: 1;
-  color: rgb(32, 32, 32);
-  background: none;
-}
-.SignUp .body .right .input-container .input-field .for {
-  color: red;
-  margin-top: 5px;
-}
-.SignUp .body .right .input-container .input-field .don {
-  display: inline-block;
-}
-.SignUp .body .right .input-container .input-field .don span {
-  font-size: 1em;
-  color: red;
-  display: inline-block;
-}
-
-.Barrister {
-  z-index: 10000;
-  min-width: 100%;
-  position: fixed;
-  top: 5.5em;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  border: solid 2px #8d8d8d;
-  border-left: none;
-  border-right: none;
-  background-color: #f5f5f5;
-  padding-left: 4em;
-}
-.Barrister div {
-  padding: 1em;
-  min-height: 100%;
-  border-left: solid 2px #8d8d8d;
-  border-right: solid 2px #8d8d8d;
-}
-.Barrister .favbox {
-  border-left: none;
-}
-.Barrister ul {
-  padding: 0 2.5em;
-  display: flex;
-  list-style: none;
-  margin: 0 3.5em;
-  gap: 110px;
-}
-.Barrister ul li {
-  font-weight: 100;
-  padding: 0;
-  cursor: pointer;
-}
-
-.toggler {
-  z-index: 10000;
-  position: fixed;
-  top: 9em;
-  right: 0;
-  border: solid 2px #8d8d8d;
-  border-right: none;
-  display: flex;
-  justify-content: space-between;
-  gap: 2em;
-  padding: 0 2em;
-  padding-right: 6.5em;
-  width: 70%;
-  background-color: #f5f5f5;
-}
-.toggler ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  gap: 3em;
-  font-weight: 100;
-}
-.toggler .options li {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.toggler .options li .rectangle {
-  background-color: #8d8d8d;
-  width: 40px;
-  height: 3px;
-}
-
-.Trav {
-  position: fixed;
-  left: 4em;
-  top: 10.5em;
-}
-.Trav img {
-  width: 26.5em;
-  height: 39em;
-}
-
-.bodice {
-  padding: 6em 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Browse {
-  display: block;
-  padding-top: 10em;
-  padding-left: 27em;
-}
-.Browse .caro {
-  padding-top: 0;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  scale: 0.87;
-  gap: 3em;
-  width: 80em;
-}
-.Browse .caro .BoxBox {
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-@keyframes spinno {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-    rotate: 360deg;
-  }
-}
-.spin-doctor {
-  margin: 5em 0;
-  border-radius: 20px;
-  background: #dddddd;
-  box-shadow: 2px 2px 8px #383838;
-  padding: 5em 3em;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-}
-.spin-doctor .Spin {
-  animation-name: spinno;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: forward;
-}
-.spin-doctor .Spin img {
-  width: 15em;
-}
-.spin-doctor .textholder {
-  margin-top: 3em;
-}
-.spin-doctor .textholder span {
-  font-weight: 100;
-  font-size: 1.8em;
 }
 
 @media only screen and (max-width: 1236px) {
@@ -1623,6 +926,42 @@ button {
     display: none;
   }
 }
+@keyframes spinno {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+.spin-doctor {
+  margin: 5em 0;
+  border-radius: 20px;
+  background: #dddddd;
+  box-shadow: 2px 2px 8px #383838;
+  padding: 5em 3em;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.spin-doctor .Spin {
+  animation-name: spinno;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: forward;
+}
+.spin-doctor .Spin img {
+  width: 15em;
+}
+.spin-doctor .textholder {
+  margin-top: 3em;
+}
+.spin-doctor .textholder span {
+  font-weight: 100;
+  font-size: 1.8em;
+}
+
 @media only screen and (max-width: 530px) {
   .NavBar {
     padding: 1em 1em;
@@ -1687,4 +1026,4 @@ button {
   .NavBar .container .getstarted {
     display: none;
   }
-}/*# sourceMappingURL=indie.css.map */
+}/*# sourceMappingURL=Oriflae.css.map */

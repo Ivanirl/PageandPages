@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Logo from "../Resources/Oriflame_logo.png";
 import { Modal } from "react-overlays";
 import { motion } from "framer-motion";
-import Nothing from "../components/empty";
+import Nothing from "../components_oriflame/empty";
 import Bag from "../Resources/ShopBag2.png";
 
 function NavBar() {
@@ -35,10 +35,6 @@ function NavBar() {
     setActiveLink(value);
   };
 
-  const navy = useNavigate();
-  const sign = () => {
-    navy("/Signup");
-  };
 
   return (
     <div className={showModal? "scrollo Nav":"Nav"} id={scrolled ? "scrollo" : ""}>
@@ -89,7 +85,7 @@ function NavBar() {
           </button>
 
           <div className="logo">
-            <Link to="/" onClick={() => onUpdateActiveLink("home")}>
+            <Link to="/" onClick={() => onUpdateActiveLink("oriflame")}>
               <img src={Logo} className="logoimage" alt="logo image" />
             </Link>
           </div>
