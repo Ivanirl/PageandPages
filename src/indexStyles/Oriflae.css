@@ -832,6 +832,7 @@ button {
   padding: 1em;
 }
 .Footsy .containerT .right ul span {
+  cursor: pointer;
   color: #6d6d6d;
   font-size: 1.3em;
   font-weight: 200;
@@ -854,8 +855,10 @@ button {
 }
 .Footsy .containerB .float .topDawg {
   margin-bottom: 2.3em;
+  cursor: default;
 }
 .Footsy .containerB .float span {
+  cursor: default;
   color: #8a8a8a;
   display: block;
   line-height: 1.5em;
@@ -863,7 +866,23 @@ button {
   text-align: center;
 }
 .Footsy .containerB .float .u {
+  cursor: pointer;
   text-decoration: underline;
+}
+.Footsy .containerB .float .u:hover {
+  color: #3d3d3d;
+}
+
+.values .showcase {
+  align-items: center;
+}
+.values .showcase .cleany {
+  height: 11em;
+  width: 11em;
+  margin-top: 1em;
+}
+.values .showcase .clean {
+  width: 11em;
 }
 
 .News .container {
