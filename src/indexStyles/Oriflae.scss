@@ -795,6 +795,7 @@ li{
               gap: 1.1em;
               padding: 1em;
               span{
+                cursor: pointer;
                 color: #6d6d6d;
                   font-size: 1.3em;
                   font-weight: 200;
@@ -819,8 +820,10 @@ li{
       padding-top: 1em;
       .topDawg{
         margin-bottom: 2.3em;
+        cursor: default;
       }
       span{
+        cursor: default;
         color: #8a8a8a;
         display: block;
         line-height: 1.5em;
@@ -829,8 +832,27 @@ li{
       }
 
       .u{
+        cursor: pointer;
         text-decoration: underline;
+
+        &:hover{
+          color: #3d3d3d;
+        }
       }
+    }
+  }
+}
+
+.values{
+  .showcase{
+    align-items: center;
+    .cleany{
+      height: 11em;
+      width: 11em;
+      margin-top: 1em;
+    }
+    .clean{
+      width: 11em
     }
   }
 }
