@@ -1,5 +1,11 @@
 import head from "../Resources/Head.JPG";
 import beauty from "../Resources/BeautyBeauty.png";
+import rule1 from "../Resources/rule1.png";
+import rule2 from "../Resources/rule2.png";
+import rule3 from "../Resources/rule3..png";
+import rule4 from "../Resources/rule4.png";
+import rule5 from "../Resources/rule5.png";
+import rule6 from "../Resources/rule6.png";
 
 import NavBar from "../components_oriflame/navbar";
 import Banner from "../components_oriflame/Banner";
@@ -12,8 +18,6 @@ import Footer from "../components_oriflame/Footer";
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-
-///
 
 export default function () {
   const [scrolled, setScrolled] = useState(false);
@@ -63,11 +67,11 @@ export default function () {
       </div>
       <NavBar />
       <motion.div
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
-      className="oho"
-    >
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7, ease: [0.6, -0.05, 0.01, 0.99] }}
+        className="oho"
+      >
         <Banner />
         <Carousel />
         <LinkBar />
@@ -147,7 +151,26 @@ export default function () {
             <News />
           </div>
         </section>
-        <section></section>
+        <section className="wnsection Bb Be values">
+          <div className="header">
+            <h1>The Standards We Live by</h1>
+            <span>
+              Since the very begining, we have always considered nature to be an
+              important part of how we do<br></br>things and have built our
+              reputation upon offering people safe, reliable products that
+              respect our<br></br>environment. Our commitment to develop beauty
+              products you can believe in and trust is defined<br></br> by our product standards.
+            </span>
+          </div>
+          <div className="showcase">
+            <img className="cleany" alt="stand" src={rule1}/>
+            <img className="cleany" alt="stand" src={rule2}/>
+            <img className="cleany" alt="stand" src={rule3}/>
+            <img className="cleany" alt="stand" src={rule4}/>
+            <img className="cleany" alt="stand" src={rule5}/>
+            <img className="clean" alt="stand" src={rule6}/>
+          </div>
+        </section>
       </motion.div>
       <Footer />
     </div>
