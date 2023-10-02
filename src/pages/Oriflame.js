@@ -18,7 +18,7 @@ import Footer from "../components_oriflame/Footer";
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-///
+
 export default function () {
   const [scrolled, setScrolled] = useState(false);
 
