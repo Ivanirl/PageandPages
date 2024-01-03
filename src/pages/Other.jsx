@@ -11,6 +11,8 @@ export default function Ori() {
         stamina={kin.stamina}
         accuracy={kin.accuracy}
         passing={kin.passing}
+        handles={kin.handles}
+        overall={kin.overall}
       />
     </div>
   );
