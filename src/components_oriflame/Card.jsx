@@ -1,8 +1,11 @@
-export default function Card(){
+export default function Card(props){
     fetch(
         "./src/pages/Data.json"
-    )
+    ).then(response => {
+        return response.json()
+    }).then( data => {
 
+    })
 
 
     return(
