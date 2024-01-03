@@ -1,9 +1,18 @@
+import Card from "../components_oriflame/Card"
+
+
 export default function Ori (){
+    fetch(
+        "./src/pages/Data.json"
+    ).then(response => {
+        return response.json()
+    }).then( data => {
+
+    })
+
     return(
         <div className="container">
-            <h1>I love to cook</h1>
-            <span>My name is Ivan an....d I love to cook meth</span>
-            <span className="subtext">This cannot be used as evidence against me i a court of law though.</span>
+            <Card />
         </div>
     )
 }
