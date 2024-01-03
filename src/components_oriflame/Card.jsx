@@ -1,4 +1,10 @@
 export default function Card(){
+    fetch(
+        "./src/pages/Data.json"
+    )
+
+
+
     return(
         <div className="Card">
             <div className="container">
