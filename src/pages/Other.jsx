@@ -12,7 +12,7 @@ export default function Ori (){
 
     return(
         <div className="container">
-            <Card />
+            <Card key={data.id} attack={data.attack} defense={data.defense}/>
         </div>
     )
 }
