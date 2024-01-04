@@ -6,6 +6,8 @@ export default function Ori() {
     <div className="container">
       <Card
         key={kin.id}
+        firstname={kin.firstname}
+        lastname={kin.lastname}
         attack={kin.attack}
         defense={kin.defense}
         stamina={kin.stamina}
