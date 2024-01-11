@@ -24,6 +24,7 @@ body {
   scroll-behavior: smooth;
   transition: ease 0.2s;
   font-size: 0.8em;
+  padding: 4em;
 }
 
 a {
@@ -47,10 +48,51 @@ a {
 }
 .container {
   background: pink;
+  display: flex;
+  justify-content: center;
 }
 
 .Card {
+  padding: 2em;
+  border-radius: 20px;
   background: yellow;
   display: flex;
   justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-shadow: 2px 9px 19px #383838;
+}
+.Card .Main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Card .Main .left span {
+  display: block;
+}
+.Card .Main .left .first {
+  line-height: 0.8em;
+}
+.Card .Main .left .last {
+  font-size: 1.3em;
+}
+.Card .Main .rite span {
+  font-weight: bold;
+  font-size: 1.8em;
+}
+.Card .details {
+  display: flex;
+  gap: 1em;
+}
+.Card ul {
+  padding: 0;
+}
+.Card ul li {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.Card .digit {
+  font-weight: bold;
+  font-size: 1.2em;
 }/*# sourceMappingURL=Oriflae.css.map */
