@@ -62,30 +62,51 @@ a {
   width: fit-content;
   box-shadow: 2px 9px 19px #383838;
 }
+.Card .cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Card .Face {
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+}
 .Card .Main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1.4em;
+  width: 100%;
 }
 .Card .Main .left span {
   display: block;
 }
 .Card .Main .left .first {
-  line-height: 0.8em;
+  line-height: 0.6em;
 }
 .Card .Main .left .last {
-  font-size: 1.3em;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 .Card .Main .rite span {
   font-weight: bold;
   font-size: 1.8em;
+  line-height: 0;
 }
 .Card .details {
   display: flex;
-  gap: 1em;
+  gap: 2em;
+  margin-top: 0.6em;
+}
+.Card .details .rite {
+  display: flex;
 }
 .Card ul {
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .Card ul li {
   display: flex;
