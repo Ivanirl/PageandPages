@@ -17,7 +17,7 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Ori />}>
           
-        </Route>
+        </Route>    
       </Routes>
       </AnimatePresence>
   );
