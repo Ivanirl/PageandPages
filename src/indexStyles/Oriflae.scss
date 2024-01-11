@@ -19,7 +19,7 @@ p {
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  background-color: #f5f5f5;
+  background: pink;
   font-weight: 300;
   scroll-behavior: smooth;
   transition: ease 0.2s;
@@ -47,4 +47,14 @@ a {
   font-family: Centra;
   src: url(../Resources/font/CentraNo2-Book.ttf);
   font-weight: 300;
+}
+
+.container{
+  background: pink;
+}
+
+.Card{
+  background: yellow;
+  display: flex;
+  justify-content: center;
 }
