@@ -1,10 +1,10 @@
-
+import picy from "../Resources/IMG_E8511 (2).JPG" 
 
 export default function Card(props) {
   return (
     <div className="Card">
       <div className="cont">
-        <img alt="Baby LeeGM"/>
+        <img className="Face" alt="Baby LeeGM" src={picy}/>
         <div className="Main">
           <div className="left">
             <span className="first">{props.firstname}</span>
