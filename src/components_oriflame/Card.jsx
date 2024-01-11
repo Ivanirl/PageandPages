@@ -1,12 +1,14 @@
+
+
 export default function Card(props) {
   return (
     <div className="Card">
       <div className="cont">
-        <img />
+        <img alt="Baby LeeGM"/>
         <div className="Main">
           <div className="left">
-            <span>{props.firstname}</span>
-            <span>{props.lastname}</span>
+            <span className="first">{props.firstname}</span>
+            <span className="last">{props.lastname}</span>
           </div>
           <div className="rite">
             <span>{props.overall}</span>
@@ -16,29 +18,29 @@ export default function Card(props) {
           <ul className="left">
             <li>
               Attack
-              <span>{props.attack}</span>
+              <span className="digit">{props.attack}</span>
             </li>
             <li>
               Defense
-              <span>{props.defense}</span>
+              <span className="digit">{props.defense}</span>
             </li>
             <li>
               Stamina
-              <span>{props.stamina}</span>
+              <span className="digit">{props.stamina}</span>
             </li>
           </ul>
           <ul className="rite">
             <li>
               Accuracy
-              <span>{props.accuracy}</span>
+              <span className="digit">{props.accuracy}</span>
             </li>
             <li>
               Passing
-              <span>{props.passing}</span>
+              <span className="digit">{props.passing}</span>
             </li>
             <li>
                 handles
-              <span>{props.handles}</span>
+              <span className="digit">{props.handles}</span>
             </li>
           </ul>
         </div>
