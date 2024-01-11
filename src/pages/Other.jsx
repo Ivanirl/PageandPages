@@ -9,9 +9,9 @@ export default function Ori() {
         firstname={kin.firstname}
         lastname={kin.lastname}
         attack={kin.attack}
-        defense={kin.defense}
+        defense={kin.defense} 
         stamina={kin.stamina}
-        accuracy={kin.accuracy}
+        accuracy={kin.accuracy  }
         passing={kin.passing}
         handles={kin.handles}
         overall={kin.overall}
