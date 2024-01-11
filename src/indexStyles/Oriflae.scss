@@ -24,12 +24,12 @@ body {
   scroll-behavior: smooth;
   transition: ease 0.2s;
   font-size: 0.8em;
+  padding: 4em;
 }
 
 a {
   text-decoration: none;
 }
-
 
 @font-face {
   font-family: Centra;
@@ -49,12 +49,62 @@ a {
   font-weight: 300;
 }
 
-.container{
+.container {
   background: pink;
+  display: flex;
+  justify-content: center;
 }
 
-.Card{
+.Card {
+  padding: 2em;
+  border-radius: 20px;
   background: yellow;
   display: flex;
   justify-content: center;
+  width: fit-content;
+  box-shadow: 2px 9px 19px #383838;
+
+  .Main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left{
+      span{
+        display: block;
+      }
+      .first{
+        line-height: 0.8em;
+      }
+      .last{
+        font-size: 1.3em;
+      }
+    }
+
+    .rite {
+      span{
+        font-weight: bold;
+        font-size: 1.8em;
+      }
+    }
+  }
+
+  .details {
+    display: flex;
+    gap: 1em;
+  }
+
+  ul {
+    padding: 0;
+    li {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+  }
+
+  .digit {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
 }
