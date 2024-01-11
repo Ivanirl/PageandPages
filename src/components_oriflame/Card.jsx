@@ -1,7 +1,7 @@
 export default function Card(props) {
   return (
     <div className="Card">
-      <div className="container">
+      <div className="cont">
         <img />
         <div className="Main">
           <div className="left">
