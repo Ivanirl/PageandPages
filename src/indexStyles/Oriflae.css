@@ -50,6 +50,7 @@ a {
   background: pink;
   display: flex;
   justify-content: center;
+  gap: 2em;
 }
 
 .Card {
@@ -71,7 +72,8 @@ a {
   height: 10em;
   width: 10em;
   border-radius: 50%;
-  border: 5px white;
+  border: 5px solid white;
+  box-shadow: 1px 1px 3px black;
 }
 .Card .Main {
   display: flex;
