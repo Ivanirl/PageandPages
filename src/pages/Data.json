@@ -1,12 +1,13 @@
 {
-  "key": "LeBron",
-  "firstname": "LeBron",
-  "lastname": "James",
-  "attack": 94,
-  "defense": 91,
-  "stamina": 94,
-  "accuracy": 97,
-  "passing": 89,
-  "handles": 92,
-  "overall": 97
+  "LeBron": {
+    "firstname": "LeBron",
+    "lastname": "James",
+    "attack": 94,
+    "defense": 91,
+    "stamina": 94,
+    "accuracy": 97,
+    "passing": 89,
+    "handles": 92,
+    "overall": 97
+  }
 }
