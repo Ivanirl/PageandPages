@@ -9,5 +9,16 @@
     "passing": 89,
     "handles": 92,
     "overall": 97
+  },
+  "Curry": {
+    "firstname": "Stephen",
+    "lastname": "Curry",
+    "attack": 96,
+    "defense": 87,
+    "stamina": 92,
+    "accuracy": 98,
+    "passing": 91,
+    "handles": 93,
+    "overall": 96
   }
 }
