@@ -1,9 +1,12 @@
 import Card from "../components_oriflame/Card";
 import Pdata from "./Data.json";
+import { useNavigate } from "react-router-dom";
 
 export default function Ori() {
   const poop = Pdata.LeBron;
   const spice = Pdata.Curry
+
+  const navy = useNavigate()
 
   return (
     <div className="container">
@@ -31,6 +34,8 @@ export default function Ori() {
         handles={spice.handles}
         overall={spice.overall}
       />
+
+      <button onClick={navy("/ho")}>Goooooo</button>
     </div>
   );
 }
