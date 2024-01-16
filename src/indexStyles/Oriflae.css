@@ -24,7 +24,6 @@ body {
   scroll-behavior: smooth;
   transition: ease 0.2s;
   font-size: 0.8em;
-  padding: 4em;
 }
 
 a {
@@ -121,22 +120,55 @@ a {
   font-size: 1.2em;
 }
 
+.Homey .FirstAvenger {
+  padding: 4em;
+}
 .Homey .FirstAvenger h1 {
   font-size: 6em;
   font-weight: bold;
   color: whitesmoke;
   line-height: 0.8em;
-  margin-bottom: 0;
+  margin-bottom: 0.2em;
+  text-shadow: 2px 2px 2px #000;
 }
 .Homey .FirstAvenger span {
   font-weight: bold;
   font-size: 2em;
-  color: pink;
+  color: whitesmoke;
 }
 .Homey .FirstAvenger .small {
-  color: black;
+  position: absolute;
+  bottom: 7em;
+  right: 0;
+  color: whitesmoke;
   display: block;
   width: 30%;
   margin-top: 2em;
   font-size: 1.1em;
+  rotate: 270deg;
+}
+
+.Navbar {
+  width: 100%;
+  padding: 2em;
+}
+.Navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+}
+.Navbar .container .left {
+  width: 2em;
+  height: 2em;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px #000;
+}
+.Navbar .container .right span {
+  font-weight: bold;
+  color: whitesmoke;
+  border: 4px black solid;
+  padding: 0.5em 0.7em;
+  background: rgb(250, 87, 27);
 }/*# sourceMappingURL=Oriflae.css.map */
