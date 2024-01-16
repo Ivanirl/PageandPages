@@ -16,8 +16,8 @@ function App() {
   return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Ori />}></Route>
-        <Route path="/ho" element={<Home />}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/ho" element={<Ori />}></Route>
       </Routes>
     </AnimatePresence>
   );
