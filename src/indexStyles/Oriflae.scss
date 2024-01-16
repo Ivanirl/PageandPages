@@ -65,13 +65,13 @@ a {
   width: fit-content;
   box-shadow: 2px 9px 19px #383838;
 
-  .cont{
+  .cont {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .Face{
+  .Face {
     height: 10em;
     width: 10em;
     border-radius: 50%;
@@ -86,21 +86,21 @@ a {
     margin-top: 1.4em;
     width: 100%;
 
-    .left{
-      span{
+    .left {
+      span {
         display: block;
       }
-      .first{
+      .first {
         line-height: 0.6em;
       }
-      .last{
+      .last {
         font-size: 1.5em;
         font-weight: bold;
       }
     }
 
     .rite {
-      span{
+      span {
         font-weight: bold;
         font-size: 1.8em;
         line-height: 0;
@@ -113,7 +113,7 @@ a {
     gap: 2em;
     margin-top: 0.6em;
 
-    .rite{
+    .rite {
       display: flex;
     }
   }
@@ -136,28 +136,48 @@ a {
   }
 }
 
-.Homey{
-  .FirstAvenger{
+.Homey {
+  .poop{
+    z-index: -2;
+    position: absolute;
+    top: 9em;
+    left: 9em;
+    width: 7em;
+    height: 7em;
+    box-shadow: 1px 1px 2px #000;
+    rotate: 340deg;
+  }
+  .poopy{
+    z-index: -2;
+    position: absolute;
+    cursor: pointer;
+    top: 9em;
+    left: 9em;
+    width: 7em;
+    height: 7em;
+    box-shadow: 1px 1px 2px #000;
+    rotate: 310deg;
+  }
+  .FirstAvenger {
     padding: 4em;
 
-    .con{
+    .con {
       // position: relative;
     }
-    h1{
+    h1 {
       font-size: 6em;
       font-weight: bold;
       color: whitesmoke;
       line-height: 0.8em;
       margin-bottom: 0.2em;
       text-shadow: 2px 2px 2px #000;
-
     }
-    span{
+    span {
       font-weight: bold;
-      font-size: 2em ;
+      font-size: 2em;
       color: whitesmoke;
     }
-    .small{
+    .small {
       position: absolute;
       bottom: 7em;
       right: 0;
@@ -165,35 +185,50 @@ a {
       display: block;
       width: 30%;
       margin-top: 2em;
-      font-size: 1.1em ;
+      font-size: 1.1em;
       rotate: 270deg;
     }
   }
 }
 
-.Navbar{
+.Navbar {
   width: 100%;
   //background: yellow;
   padding: 2em;
-  .container{
+  .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: none;
-    .left{
+    .left {
+      cursor: pointer;
+
       width: 2em;
       height: 2em;
       background: white;
+      border: none;
       border-radius: 50%;
       box-shadow: 2px 2px 2px #000;
     }
-    .right{
-      span{
+    .rite {
+      cursor: pointer;
+      width: 2em;
+      height: 2em;
+      background: rgb(101, 35, 223);
+      border: none;
+      border-radius: 50%;
+      box-shadow: 2px 2px 2px #000;
+    }
+    .right {
+      span {
         font-weight: bold;
         color: whitesmoke;
         border: 4px black solid;
         padding: 0.5em 0.7em;
         background: rgb(250, 87, 27);
+      }
+      .blue{
+        background: blue;
       }
     }
   }
