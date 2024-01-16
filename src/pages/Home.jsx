@@ -7,16 +7,15 @@ export default function Home() {
 
   return (
     <div className="Homey">
-      <Navbar/>
+      <Navbar />
       <section className="FirstAvenger">
-        <h1>
-          Welcome<br></br> to your nightmare
-        </h1>
-        <span className="top">Hahahahaha</span>
-        <span className="small">
-          I'll explain this for the civilians looking at this demo page, this is
-          a Gloria from Mordern Family reference.
-        </span>
+        <div className="con">
+          <h1>
+            Welcome<br></br> to your nightmare
+          </h1>
+          <span className="top">Hahahahaha</span>
+          <span className="small">A Gloria from Mordern Family reference.</span>
+        </div>
       </section>
     </div>
   );
