@@ -120,6 +120,27 @@ a {
   font-size: 1.2em;
 }
 
+.Homey .poop {
+  z-index: -2;
+  position: absolute;
+  top: 9em;
+  left: 9em;
+  width: 7em;
+  height: 7em;
+  box-shadow: 1px 1px 2px #000;
+  rotate: 340deg;
+}
+.Homey .poopy {
+  z-index: -2;
+  position: absolute;
+  cursor: pointer;
+  top: 9em;
+  left: 9em;
+  width: 7em;
+  height: 7em;
+  box-shadow: 1px 1px 2px #000;
+  rotate: 310deg;
+}
 .Homey .FirstAvenger {
   padding: 4em;
 }
@@ -159,9 +180,20 @@ a {
   background: none;
 }
 .Navbar .container .left {
+  cursor: pointer;
   width: 2em;
   height: 2em;
   background: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px #000;
+}
+.Navbar .container .rite {
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+  background: rgb(101, 35, 223);
+  border: none;
   border-radius: 50%;
   box-shadow: 2px 2px 2px #000;
 }
@@ -171,4 +203,7 @@ a {
   border: 4px black solid;
   padding: 0.5em 0.7em;
   background: rgb(250, 87, 27);
+}
+.Navbar .container .right .blue {
+  background: blue;
 }/*# sourceMappingURL=Oriflae.css.map */
