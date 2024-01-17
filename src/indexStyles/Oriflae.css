@@ -192,6 +192,7 @@ a {
 
 .Navbar {
   width: 100%;
+  background: rgb(233, 81, 26);
   padding: 2em;
 }
 .Navbar .container {
