@@ -16,7 +16,7 @@ export default function Home() {
       <img onClick={()=>setMenuha(!menuha)} className={menuha? "poopy" : "poop" } src={poop} alt="nope" />
       <img onClick={()=>setMenuha(!menuha)} className={menuha? "poopy2" : "poop2" } src={poop2} alt="nope" />
 
-      <Navbar />
+      <Navbar toint="ORDER ONLINE" onyx={()=>{setMenuha(!menuha)}}/>
       <section className="FirstAvenger">
         <div className="con">
           <h1>
