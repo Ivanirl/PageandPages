@@ -1,16 +1,12 @@
-//import { useState} from "react"
-
-export default function Navbar({toint, menuha, onyx, setMenuha}){
-    //const [menuha, setMenuha] = useState(false)
-
-    return(
-        <div className="Navbar">
-            <div className="container">
-                <button className={menuha? "left": "rite"} onClick={onyx}></button>
-                <div className="right">
-                    <span className={menuha? " ": "blue"}>{toint}</span>
-                </div>
-            </div>
+export default function Navbar({ toint, yup, onyx }) {
+  return (
+    <div className="Navbar">
+      <div className="container">
+        <button className={yup ? "left" : "rite"} onClick={onyx}></button>
+        <div className="right">
+          <span className={yup ? " " : "blue"}>{toint}</span>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
