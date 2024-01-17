@@ -1,7 +1,7 @@
-import { useState,} from "react"
+//import { useState} from "react"
 
-export default function Navbar(){
-    const [menuha, setMenuha] = useState(false)
+export default function Navbar({menuha, setMenuha}){
+    //const [menuha, setMenuha] = useState(false)
 
     return(
         <div className="Navbar">
