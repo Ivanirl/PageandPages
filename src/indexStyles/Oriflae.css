@@ -123,7 +123,7 @@ a {
 .Homey .poop {
   z-index: -2;
   position: absolute;
-  top: 9em;
+  top: 7em;
   left: 9em;
   width: 7em;
   height: 7em;
@@ -134,12 +134,33 @@ a {
   z-index: -2;
   position: absolute;
   cursor: pointer;
-  top: 9em;
+  top: 7em;
   left: 9em;
   width: 7em;
   height: 7em;
   box-shadow: 1px 1px 2px #000;
   rotate: 310deg;
+}
+.Homey .poop2 {
+  z-index: -2;
+  position: absolute;
+  bottom: 11em;
+  right: 11em;
+  width: 7em;
+  height: 7em;
+  box-shadow: 1px 1px 2px #000;
+  rotate: 40deg;
+}
+.Homey .poopy2 {
+  z-index: -2;
+  position: absolute;
+  cursor: pointer;
+  bottom: 9em;
+  right: 9em;
+  width: 7em;
+  height: 7em;
+  box-shadow: 1px 1px 2px #000;
+  rotate: 60deg;
 }
 .Homey .FirstAvenger {
   padding: 4em;
