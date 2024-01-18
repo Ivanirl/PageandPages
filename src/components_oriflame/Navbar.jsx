@@ -1,3 +1,5 @@
+
+
 export default function Navbar({ toint, yup, onyx }) {
   return (
     <div className="Navbar">
