@@ -27,9 +27,12 @@ export default function Home() {
           <span className="small">A Gloria from Mordern Family reference.</span>
         </div>
       </section>
-      <section className="SecondAvenger">
-      </section>
       <Carousel />
+      <section className="SecondAvenger">
+        <h1>
+          The wicked will be judged with the wrath of Allah.
+        </h1>
+      </section>
     </div>
   );
 }
