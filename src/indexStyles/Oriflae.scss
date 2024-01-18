@@ -170,12 +170,13 @@ a {
       span {
         font-weight: bold;
         color: whitesmoke;
-        border: 4px whitesmoke solid;
+        border: 3px whitesmoke solid;
         padding: 0.5em 0.7em;
         background: rgb(250, 87, 27);
       }
       .blue {
         background: blue;
+        border: black 3px solid;
       }
     }
   }
@@ -247,10 +248,10 @@ a {
     .small {
       position: absolute;
       bottom: 7em;
-      right: 0;
+      right: -3em;
       color: whitesmoke;
       display: block;
-      width: 30%;
+      width: 40%;
       margin-top: 2em;
       font-size: 1.1em;
       rotate: 270deg;
@@ -261,14 +262,16 @@ a {
 .Caro {
   display: flex;
   justify-content: center;
-  margin-top: 12em;
-  border: 3px whitesmoke solid;
-  padding: 1em;
+  margin-top: 14em;
   width: 100%;
+  overflow: hidden;
 
   .box {
     width: 100%;
-    padding: 0 50%;
+    padding: 1em;
+    border: 3px whitesmoke solid;
+    display: flex;
+    justify-content: center;
     span {
       display: block;
     }
