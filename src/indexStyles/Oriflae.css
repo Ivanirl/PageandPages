@@ -205,11 +205,12 @@ a {
   box-shadow: 1px 1px 2px #000;
   rotate: 60deg;
 }
-.Homey .FirstAvenger {
+
+section {
   padding: 4em;
   margin-top: 6em;
 }
-.Homey .FirstAvenger h1 {
+section h1 {
   font-size: 6em;
   font-weight: bold;
   color: whitesmoke;
@@ -217,12 +218,12 @@ a {
   margin-bottom: 0.2em;
   text-shadow: 2px 2px 2px #000;
 }
-.Homey .FirstAvenger span {
+section span {
   font-weight: bold;
   font-size: 2em;
   color: whitesmoke;
 }
-.Homey .FirstAvenger .small {
+section .small {
   position: absolute;
   bottom: 7em;
   right: -3em;
@@ -237,7 +238,7 @@ a {
 .Caro {
   display: flex;
   justify-content: center;
-  margin-top: 14em;
+  margin-top: 16em;
   width: 100%;
   overflow: hidden;
 }
@@ -250,4 +251,8 @@ a {
 }
 .Caro .box span {
   display: block;
+}
+
+.SecondAvenger {
+  margin-top: 0;
 }/*# sourceMappingURL=Oriflae.css.map */
