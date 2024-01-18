@@ -2,7 +2,7 @@
   font-family: "Centra", sans-serif !important;
   box-sizing: border-box;
   list-style: none;
-  color: rgb(37, 37, 37);
+  color: whitesmoke;
   transition: all 0.2s ease;
 }
 
@@ -136,39 +136,84 @@ a {
   }
 }
 
+.Navbar {
+  width: 100%;
+  background: rgb(233, 81, 26);
+  padding: 2em;
+  position: fixed;
+  top: 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    .left {
+      cursor: pointer;
+
+      width: 2em;
+      height: 2em;
+      background: white;
+      border: none;
+      border-radius: 50%;
+      box-shadow: 2px 2px 2px #000;
+    }
+    .rite {
+      cursor: pointer;
+      width: 2em;
+      height: 2em;
+      background: rgb(101, 35, 223);
+      border: none;
+      border-radius: 50%;
+      box-shadow: 2px 2px 2px #000;
+    }
+    .right {
+      span {
+        font-weight: bold;
+        color: whitesmoke;
+        border: 4px whitesmoke solid;
+        padding: 0.5em 0.7em;
+        background: rgb(250, 87, 27);
+      }
+      .blue {
+        background: blue;
+      }
+    }
+  }
+}
+
 .Homey {
-  .poop{
+  .poop {
     z-index: -2;
     position: absolute;
-    top: 7em;
+    top: 8em;
     left: 9em;
-    width: 7em;
-    height: 7em;
+    width: 8em;
+    height: 8em;
     box-shadow: 1px 1px 2px #000;
     rotate: 340deg;
   }
-  .poopy{
+  .poopy {
     z-index: -2;
     position: absolute;
     cursor: pointer;
-    top: 7em;
+    top: 8em;
     left: 9em;
     width: 7em;
     height: 7em;
     box-shadow: 1px 1px 2px #000;
     rotate: 310deg;
   }
-  .poop2{
+  .poop2 {
     z-index: -2;
     position: absolute;
     bottom: 11em;
     right: 11em;
-    width: 7em;
-    height: 7em;
+    width: 8em;
+    height: 8em;
     box-shadow: 1px 1px 2px #000;
     rotate: 40deg;
   }
-  .poopy2{
+  .poopy2 {
     z-index: -2;
     position: absolute;
     cursor: pointer;
@@ -181,6 +226,7 @@ a {
   }
   .FirstAvenger {
     padding: 4em;
+    margin-top: 6em;
 
     .con {
       // position: relative;
@@ -212,45 +258,19 @@ a {
   }
 }
 
-.Navbar {
+.Caro {
+  display: flex;
+  justify-content: center;
+  margin-top: 12em;
+  border: 3px whitesmoke solid;
+  padding: 1em;
   width: 100%;
-  background: rgb(233, 81, 26);
-  padding: 2em;
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: none;
-    .left {
-      cursor: pointer;
 
-      width: 2em;
-      height: 2em;
-      background: white;
-      border: none;
-      border-radius: 50%;
-      box-shadow: 2px 2px 2px #000;
-    }
-    .rite {
-      cursor: pointer;
-      width: 2em;
-      height: 2em;
-      background: rgb(101, 35, 223);
-      border: none;
-      border-radius: 50%;
-      box-shadow: 2px 2px 2px #000;
-    }
-    .right {
-      span {
-        font-weight: bold;
-        color: whitesmoke;
-        border: 4px black solid;
-        padding: 0.5em 0.7em;
-        background: rgb(250, 87, 27);
-      }
-      .blue{
-        background: blue;
-      }
+  .box {
+    width: 100%;
+    padding: 0 50%;
+    span {
+      display: block;
     }
   }
 }
