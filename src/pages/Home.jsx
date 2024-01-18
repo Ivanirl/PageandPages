@@ -4,6 +4,7 @@ import { useState } from "react";
 import poop from "../Resources/AIQT4810.JPG"
 import poop2 from "../Resources/EXYS3788.JPG"
 import Navbar from "../components_oriflame/Navbar";
+import Carousel from "../components_oriflame/Carousel";
 
 export default function Home() {
   
@@ -28,6 +29,7 @@ export default function Home() {
       </section>
       <section className="SecondAvenger">
       </section>
+      <Carousel />
     </div>
   );
 }
