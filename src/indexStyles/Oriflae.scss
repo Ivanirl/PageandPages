@@ -225,44 +225,45 @@ a {
     box-shadow: 1px 1px 2px #000;
     rotate: 60deg;
   }
-  .FirstAvenger {
-    padding: 4em;
-    margin-top: 6em;
+}
 
-    .con {
-      // position: relative;
-    }
-    h1 {
-      font-size: 6em;
-      font-weight: bold;
-      color: whitesmoke;
-      line-height: 0.8em;
-      margin-bottom: 0.2em;
-      text-shadow: 2px 2px 2px #000;
-    }
-    span {
-      font-weight: bold;
-      font-size: 2em;
-      color: whitesmoke;
-    }
-    .small {
-      position: absolute;
-      bottom: 7em;
-      right: -3em;
-      color: whitesmoke;
-      display: block;
-      width: 40%;
-      margin-top: 2em;
-      font-size: 1.1em;
-      rotate: 270deg;
-    }
+section{
+  padding: 4em;
+  margin-top: 6em;
+
+  .con {
+    // position: relative;
+  }
+  h1 {
+    font-size: 6em;
+    font-weight: bold;
+    color: whitesmoke;
+    line-height: 0.8em;
+    margin-bottom: 0.2em;
+    text-shadow: 2px 2px 2px #000;
+  }
+  span {
+    font-weight: bold;
+    font-size: 2em;
+    color: whitesmoke;
+  }
+  .small {
+    position: absolute;
+    bottom: 7em;
+    right: -3em;
+    color: whitesmoke;
+    display: block;
+    width: 40%;
+    margin-top: 2em;
+    font-size: 1.1em;
+    rotate: 270deg;
   }
 }
 
 .Caro {
   display: flex;
   justify-content: center;
-  margin-top: 14em;
+  margin-top: 16em;
   width: 100%;
   overflow: hidden;
 
@@ -276,4 +277,8 @@ a {
       display: block;
     }
   }
+}
+
+.SecondAvenger{
+  margin-top: 0;
 }
