@@ -60,7 +60,6 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   box-shadow: 2px 9px 19px #383838;
-  color: black;
 }
 .Card .cont {
   display: flex;
@@ -81,6 +80,9 @@ a {
   margin-top: 1.4em;
   width: 100%;
 }
+.Card .Main * {
+  color: black;
+}
 .Card .Main .left span {
   display: block;
 }
@@ -100,6 +102,9 @@ a {
   display: flex;
   gap: 2em;
   margin-top: 0.6em;
+}
+.Card .details * {
+  color: black;
 }
 .Card .details .rite {
   display: flex;
