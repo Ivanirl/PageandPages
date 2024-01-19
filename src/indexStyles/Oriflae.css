@@ -46,7 +46,6 @@ a {
   font-weight: 300;
 }
 .container {
-  background: orangered;
   display: flex;
   justify-content: center;
   gap: 2em;
@@ -61,6 +60,7 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   box-shadow: 2px 9px 19px #383838;
+  color: black;
 }
 .Card .cont {
   display: flex;
