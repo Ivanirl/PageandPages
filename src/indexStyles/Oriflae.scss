@@ -85,6 +85,9 @@ a {
     align-items: center;
     margin-top: 1.4em;
     width: 100%;
+    *{
+      color: black;
+    }
 
     .left {
       span {
@@ -112,6 +115,9 @@ a {
     display: flex;
     gap: 2em;
     margin-top: 0.6em;
+    *{
+      color: black;
+    }
 
     .rite {
       display: flex;
