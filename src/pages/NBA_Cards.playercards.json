@@ -1,0 +1,85 @@
+[{
+  "_id": {
+    "$oid": "65ab986526172cd2ccbfda86"
+  },
+  "headShot": "https://www.basketball-reference.com/req/202106291/images/headshots/antetgi01.jpg",
+  "firstName": "Giannis",
+  "lastName": "Antetokounmpo",
+  "height": "6-11",
+  "DateOfBirth": {
+    "$date": "1994-12-06T00:00:00.000Z"
+  },
+  "position": [
+    "Power Forward",
+    "Small Forward",
+    "Point Guard",
+    "Shooting Guard"
+  ],
+  "shootingHand": "Right",
+  "PPG": 31.2,
+  "RPG": 11.4,
+  "APG": 5.9,
+  "GPL": 39,
+  "createdAt": {
+    "$date": "2024-01-20T09:54:45.308Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-20T09:54:45.308Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ab9a8026172cd2ccbfda89"
+  },
+  "headShot": "https://www.basketball-reference.com/req/202106291/images/headshots/edwaran01.jpg",
+  "firstName": "Anthony",
+  "lastName": "Edwards",
+  "height": "6-4",
+  "DateOfBirth": {
+    "$date": "2001-08-05T00:00:00.000Z"
+  },
+  "position": [
+    "Shooting Guard"
+  ],
+  "shootingHand": "Right",
+  "PPG": 26.1,
+  "RPG": 5.4,
+  "APG": 5,
+  "GPL": 38,
+  "createdAt": {
+    "$date": "2024-01-20T10:03:44.366Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-20T10:03:44.366Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ab9d7d26172cd2ccbfda8c"
+  },
+  "headShot": "https://www.basketball-reference.com/req/202106291/images/headshots/antetth01.jpg",
+  "firstName": "Thanasis",
+  "lastName": "Antetokounmpo",
+  "height": "6-7",
+  "DateOfBirth": {
+    "$date": "1992-07-18T00:00:00.000Z"
+  },
+  "position": [
+    "Small Forward",
+    "Power Forward"
+  ],
+  "shootingHand": "Right",
+  "PPG": 0.8,
+  "RPG": 0.5,
+  "APG": 0.5,
+  "GPL": 17,
+  "createdAt": {
+    "$date": "2024-01-20T10:16:29.077Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-20T10:16:29.077Z"
+  },
+  "__v": 0
+}]
