@@ -6,7 +6,6 @@ export default function Ori() {
   const poop = Pdata.LeBron;
   const spice = Pdata.Curry;
 
-  const navy = useNavigate();
 
   return (
     <div className="containerr">
