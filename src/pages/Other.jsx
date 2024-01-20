@@ -9,7 +9,7 @@ export default function Ori() {
   const navy = useNavigate()
 
   return (
-    <div className="container">
+    <div className="containerr">
       <Card
         key={poop.id}
         firstname={poop.firstname}
@@ -22,20 +22,6 @@ export default function Ori() {
         handles={poop.handles}
         overall={poop.overall}
       />
-      <Card
-        key={spice.id}
-        firstname={spice.firstname}
-        lastname={spice.lastname}
-        attack={spice.attack}
-        defense={spice.defense}
-        stamina={spice.stamina}
-        accuracy={spice.accuracy}
-        passing={spice.passing}
-        handles={spice.handles}
-        overall={spice.overall}
-      />
-
-      <button onClick={navy("/ho")}>Goooooo</button>
     </div>
   );
 }

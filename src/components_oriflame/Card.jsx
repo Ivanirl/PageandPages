@@ -1,10 +1,10 @@
-import picy from "../Resources/IMG_E8511 (2).JPG" 
+import picy from "../Resources/IMG_E8511 (2).JPG";
 
 export default function Card(props) {
   return (
     <div className="Card">
       <div className="cont">
-        <img className="Face" alt="Baby LeeGM" src={picy}/>
+        <img className="Face" alt="Baby LeeGM" src={picy} />
         <div className="Main">
           <div className="left">
             <span className="first">{props.firstname}</span>
@@ -17,30 +17,30 @@ export default function Card(props) {
         <div className="details">
           <ul className="left">
             <li>
-              Attack
               <span className="digit">{props.attack}</span>
+              Attack
             </li>
             <li>
-              Defense
               <span className="digit">{props.defense}</span>
+              Defense
             </li>
             <li>
-              Stamina
               <span className="digit">{props.stamina}</span>
+              Stamina
             </li>
           </ul>
           <ul className="rite">
             <li>
-              Accuracy
               <span className="digit">{props.accuracy}</span>
+              Accuracy
             </li>
             <li>
-              Passing
               <span className="digit">{props.passing}</span>
+              Passing
             </li>
             <li>
-                handles
               <span className="digit">{props.handles}</span>
+              handles
             </li>
           </ul>
         </div>

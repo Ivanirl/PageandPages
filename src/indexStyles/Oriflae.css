@@ -45,10 +45,11 @@ a {
   src: url(../Resources/font/CentraNo2-Book.ttf);
   font-weight: 300;
 }
-.container {
+.containerr {
   display: flex;
   justify-content: center;
   gap: 2em;
+  padding-top: 4em;
 }
 
 .Card {
@@ -60,6 +61,7 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   box-shadow: 2px 9px 19px #383838;
+  cursor: pointer;
 }
 .Card .cont {
   display: flex;

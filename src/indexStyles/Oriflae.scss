@@ -48,12 +48,11 @@ a {
   font-weight: 300;
 }
 
-.container {
-  //background: orangered;
-  // background: rgb(233, 81, 26);
+.containerr {
   display: flex;
   justify-content: center;
   gap: 2em;
+  padding-top: 4em;
 }
 
 .Card {
@@ -64,6 +63,7 @@ a {
   justify-content: center;
   width: fit-content;
   box-shadow: 2px 9px 19px #383838;
+  cursor: pointer;
 
   .cont {
     display: flex;
