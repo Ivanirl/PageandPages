@@ -6,7 +6,6 @@ export default function Ori() {
   const poop = Pdata.LeBron;
   const spice = Pdata.Curry;
 
-
   return (
     <div className="containerr">
       <Card
