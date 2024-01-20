@@ -4,9 +4,9 @@ import { useNavigate } from "react-router-dom";
 
 export default function Ori() {
   const poop = Pdata.LeBron;
-  const spice = Pdata.Curry
+  const spice = Pdata.Curry;
 
-  const navy = useNavigate()
+  const navy = useNavigate();
 
   return (
     <div className="containerr">
