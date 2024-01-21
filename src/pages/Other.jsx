@@ -7,6 +7,10 @@ export default function Ori() {
   const poop = Pdata.LeBron;
   const spice = Pseudo;
 
+  const soap = Pseudo.find(obj => {
+    return obj.firstName === "Giannis"
+  })
+
   return (
     <div className="containerr">
       <Card
@@ -21,7 +25,7 @@ export default function Ori() {
         handles={poop.handles}
         overall={poop.overall}
       />
-      <div></div>
+      <div>{soap.lastName}</div>
     </div>
   );
 }
