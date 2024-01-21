@@ -25,7 +25,7 @@ export default function Ori() {
         handles={poop.handles}
         overall={poop.overall}
       />
-      <div>{soap.lastName}</div>
+      <div>{soap.PPG}</div>
     </div>
   );
 }
