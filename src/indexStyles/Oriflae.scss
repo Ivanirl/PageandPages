@@ -62,10 +62,24 @@ a {
     flex-direction: column;
     align-items: center;
 
+    input{
+      color: black;
+      border: none;
+      box-shadow: 2px 2px 4px #383838;
+      border-radius: 11px;
+      font-size: 1.2em;
+      padding: 1em;
+      width: 100%;
+    }
+
     button{
       color: black;
-      padding: 1em 0.5em;
+      padding: 0.4em 1em;
       width: fit-content;
+      margin-top: 1em;
+      border: none;
+      border-radius: 11px;
+      box-shadow: 2px 2px 4px #383838;
     }
   }
 }
