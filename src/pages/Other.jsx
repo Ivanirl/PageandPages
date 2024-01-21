@@ -15,7 +15,7 @@ export default function Ori() {
     <div className="containerr">
       <form className="dataEntry">
         <input></input>
-        <button></button>
+        <button>Search</button>
       </form>
       <Card
         key={poop.id}
