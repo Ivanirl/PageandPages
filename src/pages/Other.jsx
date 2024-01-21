@@ -1,10 +1,11 @@
 import Card from "../components_oriflame/Card";
 import Pdata from "./Data.json";
 import { useNavigate } from "react-router-dom";
+import Pseudo from "./NBA_Cards.playercards.json"
 
 export default function Ori() {
   const poop = Pdata.LeBron;
-  const spice = Pdata.Curry;
+  const spice = Pseudo;
 
   return (
     <div className="containerr">
@@ -20,6 +21,7 @@ export default function Ori() {
         handles={poop.handles}
         overall={poop.overall}
       />
+      <div></div>
     </div>
   );
 }
