@@ -1,24 +1,38 @@
 import Card from "../components_oriflame/Card";
 import Pdata from "./Data.json";
 import { useNavigate } from "react-router-dom";
-import Pseudo from "./NBA_Cards.playercards.json"
+import { useState } from "react";
+import Pseudo from "./NBA_Cards.playercards.json";
 
 export default function Ori() {
+  const [stat, getStat] = useState("");
+  const [updated, setUpdated] = useState(stat);
+
   const poop = Pdata.LeBron;
 
-  const send = ()=>{
-    date =input.value
-  }
+  const send = (event) => {
+    getStat(event.target.value);
+    console.log(stat);
+  };
 
-  const soap = Pseudo.find(obj => {
-    return obj.firstName === "Giannis"
-  })
+  const sendHelper = () => {
+    setUpdated(stat);
+    soap;
+  };
+
+  const soap = Pseudo.find((obj) => {
+    return obj.firstName === stat;
+  });
 
   return (
     <div className="containerr">
-
       <form className="dataEntry">
-        <input></input>
+        <input
+          type="text"
+          className="pData"
+          onChange={send}
+          value={stat}
+        ></input>
         <button onClick={send}>Search</button>
       </form>
 
@@ -34,7 +48,8 @@ export default function Ori() {
         handles={poop.handles}
         overall={poop.overall}
       />
-      <div>{soap.PPG}</div>
+      <div>{stat}</div>
+      <button onClick={sendHelper}></button>
     </div>
   );
 }
