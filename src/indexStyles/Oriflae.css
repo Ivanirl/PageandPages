@@ -45,6 +45,17 @@ a {
   src: url(../Resources/font/CentraNo2-Book.ttf);
   font-weight: 300;
 }
+.poise {
+  color: black;
+  padding: 0.4em 1em;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 1em;
+  border: none;
+  border-radius: 11px;
+  box-shadow: 2px 2px 4px #383838;
+}
+
 .containerr {
   display: flex;
   justify-content: center;
