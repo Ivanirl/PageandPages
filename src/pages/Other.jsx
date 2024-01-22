@@ -5,7 +5,11 @@ import Pseudo from "./NBA_Cards.playercards.json"
 
 export default function Ori() {
   const poop = Pdata.LeBron;
-  const spice = Pseudo;
+
+  const send = ()=>{
+    date =input.value
+    console.log(date)
+  }
 
   const soap = Pseudo.find(obj => {
     return obj.firstName === "Giannis"
@@ -13,10 +17,12 @@ export default function Ori() {
 
   return (
     <div className="containerr">
+
       <form className="dataEntry">
         <input></input>
-        <button>Search</button>
+        <button onClick={send}>Search</button>
       </form>
+
       <Card
         key={poop.id}
         firstname={poop.firstname}
