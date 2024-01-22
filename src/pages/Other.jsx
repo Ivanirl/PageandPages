@@ -34,7 +34,7 @@ export default function Ori() {
           value={stat}
         ></input>
       </form>
-      <button className="poise" onClick={send}>Search</button>
+      <button className="poise" onClick={sendHelper}>Search</button>
 
 
       <Card
@@ -50,7 +50,6 @@ export default function Ori() {
         overall={poop.overall}
       />
       <div>{stat}</div>
-      <button onClick={sendHelper}></button>
     </div>
   );
 }
