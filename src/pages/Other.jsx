@@ -1,6 +1,6 @@
 import Card from "../components_oriflame/Card";
 import Pdata from "./Data.json";
-import { useNavigate } from "react-router-dom";
+
 import { useState } from "react";
 import Pseudo from "./NBA_Cards.playercards.json";
 
@@ -33,8 +33,9 @@ export default function Ori() {
           onChange={send}
           value={stat}
         ></input>
-        <button onClick={send}>Search</button>
       </form>
+      <button className="poise" onClick={send}>Search</button>
+
 
       <Card
         key={poop.id}
