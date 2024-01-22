@@ -8,7 +8,6 @@ export default function Ori() {
 
   const send = ()=>{
     date =input.value
-    console.log(date)
   }
 
   const soap = Pseudo.find(obj => {
