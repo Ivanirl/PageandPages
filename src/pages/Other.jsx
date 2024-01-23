@@ -36,7 +36,6 @@ export default function Ori() {
       </form>
       <button className="poise" onClick={sendHelper}>Search</button>
 
-
       <Card
         key={poop.id}
         firstname={poop.firstname}
