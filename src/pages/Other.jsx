@@ -15,14 +15,17 @@ export default function Ori() {
     console.log(stat);
   };
 
-  const sendHelper = () => {
-    setUpdated(stat);
-    soap;
-  };
+  // const sendHelper = () => {
+  //   setUpdated(stat);
+  //   soap;
+  // };
 
   const soap = Pseudo.find((obj) => {
     return obj.firstName === stat;
   });
+  const tone = ()=>{
+    console.log(soap.PPG)
+  }
 
   return (
     <div className="containerr">
@@ -34,7 +37,7 @@ export default function Ori() {
           value={stat}
         ></input>
       </form>
-      <button className="poise" onClick={sendHelper}>Search</button>
+      <button className="poise" onClick={tone}>Search</button>
 
       <Card
         key={poop.id}
