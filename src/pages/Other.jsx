@@ -1,7 +1,7 @@
 import Card from "../components_oriflame/Card";
 import Pdata from "./Data.json";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Pseudo from "./NBA_Cards.playercards.json";
 
 export default function Ori() {
@@ -28,6 +28,8 @@ export default function Ori() {
     console.log(soap.PPG)
   }
 
+  useEffect
+
   return (
     <div className="containerr">
       <form className="dataEntry">
@@ -40,7 +42,7 @@ export default function Ori() {
       </form>
       <button className="poise" onClick={tone}>Search</button>
 
-      <Card
+      {/* <Card
         key={poop.id}
         firstname={poop.firstname}
         lastname={poop.lastname}
@@ -51,7 +53,7 @@ export default function Ori() {
         passing={poop.passing}
         handles={poop.handles}
         overall={poop.overall}
-      />
+      /> */}
       <div>{stat}</div>
     </div>
   );
