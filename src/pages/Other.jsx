@@ -7,6 +7,7 @@ import Pseudo from "./NBA_Cards.playercards.json";
 export default function Ori() {
   const [stat, getStat] = useState("");
   const [updated, setUpdated] = useState(stat);
+  const [isLoadin, setIsLoadin] = 
 
   const poop = Pdata.LeBron;
 
