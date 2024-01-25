@@ -19,6 +19,7 @@ export default function Ori() {
   //   setUpdated(stat);
   //   soap;
   // };
+  //
 
   const soap = Pseudo.find((obj) => {
     return obj.firstName === stat;
