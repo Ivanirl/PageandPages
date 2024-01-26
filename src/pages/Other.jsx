@@ -29,7 +29,7 @@ export default function Ori() {
     console.log(soap.PPG)
   }
 
-  useEffect
+  useEffect(()=>{})
 
   return (
     <div className="containerr">
