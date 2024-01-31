@@ -38,7 +38,7 @@ export default function Ori() {
     return (
       <Card
       key={poop.id}
-      firstname={poop.firstname}
+      firstname={soap.firstName}
       lastname={poop.lastname}
       attack={poop.attack}
       defense={poop.defense}
