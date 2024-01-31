@@ -7,7 +7,7 @@ import Pseudo from "./NBA_Cards.playercards.json";
 export default function Ori() {
   const [stat, getStat] = useState("");
   const [updated, setUpdated] = useState(stat);
-  const [isLoadin, setIsLoadin] = useState([])
+  const [isLoadin, setIsLoadin] = useState(false)
 
   const poop = Pdata.LeBron;
 
@@ -27,9 +27,29 @@ export default function Ori() {
   });
   const tone = ()=>{
     console.log(soap.PPG)
+    setIsLoadin(true)
   }
 
-  useEffect(()=>{})
+  useEffect(()=>{
+
+  })
+
+  if (isLoadin){
+    return (
+      <Card
+      key={poop.id}
+      firstname={poop.firstname}
+      lastname={poop.lastname}
+      attack={poop.attack}
+      defense={poop.defense}
+      stamina={poop.stamina}
+      accuracy={poop.accuracy}
+      passing={poop.passing}
+      handles={poop.handles}
+      overall={poop.overall}
+    />
+    )
+  }
 
   return (
     <div className="containerr">
@@ -43,19 +63,7 @@ export default function Ori() {
       </form>
       <button className="poise" onClick={tone}>Search</button>
 
-      {/* <Card
-        key={poop.id}
-        firstname={poop.firstname}
-        lastname={poop.lastname}
-        attack={poop.attack}
-        defense={poop.defense}
-        stamina={poop.stamina}
-        accuracy={poop.accuracy}
-        passing={poop.passing}
-        handles={poop.handles}
-        overall={poop.overall}
-      /> */}
-      <div>{stat}</div>
+       <div>{stat}</div>
     </div>
   );
 }
