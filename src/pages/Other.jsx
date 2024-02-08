@@ -16,7 +16,7 @@ export default function Ori() {
     console.log(stat);
   };
 
-  // //const sendHelper = () => {
+  // const sendHelper = () => {
   //   setUpdated(stat);
   //   soap;
   // };
