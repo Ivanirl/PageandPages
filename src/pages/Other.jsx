@@ -31,8 +31,8 @@ export default function Ori() {
   }
 
   useEffect(()=>{
-
-  })
+    tone();
+  }, [])
 
   if (isLoadin){
     return (
