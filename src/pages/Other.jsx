@@ -74,12 +74,12 @@ export default function Ori() {
           key={poop.id}
           firstname={soap.firstName}
           lastname={soap.lastName}
-          attack={poop.attack}
-          defense={poop.defense}
-          stamina={poop.stamina}
-          accuracy={poop.accuracy}
-          passing={poop.passing}
-          handles={poop.handles}
+          attack={soap.PPG}
+          defense={soap.RPG}
+          stamina={soap.GPL}
+          // accuracy={poop.accuracy}
+          passing={soap.APG}
+          // handles={poop.handles}
           overall={poop.overall}
         />
       </div>
