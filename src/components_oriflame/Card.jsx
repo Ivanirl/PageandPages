@@ -11,7 +11,7 @@ export default function Card(props) {
             <span className="last">{props.lastname}</span>
           </div>
           <div className="rite">
-            <span>{props.overall}</span>
+            <span>97</span>
           </div>
         </div>
         <div className="details">
