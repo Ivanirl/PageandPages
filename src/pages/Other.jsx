@@ -6,8 +6,8 @@ import Pseudo from "./NBA_Cards.playercards.json";
 
 export default function Ori() {
   const [stat, getStat] = useState("");
-  const [updated, setUpdated] = useState(stat);
-  const [isLoadin, setIsLoadin] = useState(false)
+  const [searchQuery, setSearchQuery] = useState("");
+  const [isLoadin, setIsLoadin] = useState("")
 
   const poop = Pdata.LeBron;
 
@@ -16,20 +16,41 @@ export default function Ori() {
     console.log(stat);
   };
 
+  const sendy = (event) => {
+    setIsLoadin("")
+  };
+
   const soap = Pseudo.find((obj) => {
-    return obj.firstName === stat;
+    return obj.firstName.toLowerCase() === stat;
   });
   const tone = ()=>{
     console.log(soap.PPG)
-    setIsLoadin(true)
+    setIsLoadin("loaded")
   }
 
-  useEffect(()=>{
-    // ;
-  }, [])
+  const errors = ()=>{
 
-  if (isLoadin){
+  }
+
+  const handleSubmit = (event)=>{
+    event.preventDefault()
+    tone()
+  }
+
+  if (isLoadin === "loaded"){
     return (
+      <div className="containerr">
+      <form className="dataEntry">
+        <input
+          type="text"
+          className="pData"
+          onChange={sendy}
+          value={stat}
+        ></input>
+      </form>
+      <button className="poise" onClick={tone}>Search</button>
+
+       
       <Card
       key={poop.id}
       firstname={soap.firstName}
@@ -42,6 +63,7 @@ export default function Ori() {
       handles={poop.handles}
       overall={poop.overall}
     />
+    </div>
     )
   }
 
@@ -53,12 +75,10 @@ export default function Ori() {
           className="pData"
           onChange={send}
           value={stat}
-          onChangeCapture={(e)=> setSearchQuery(e.target.value)}
         ></input>
       </form>
       <button className="poise" onClick={tone}>Search</button>
 
-       <div>{stat}</div>
     </div>
   );
 }
