@@ -6,8 +6,7 @@ import Pseudo from "./NBA_Cards.playercards.json";
 
 export default function Ori() {
   const [stat, getStat] = useState("");
-  const [searchQuery, setSearchQuery] = useState("");
-  const [isLoadin, setIsLoadin] = useState("")
+  const [isLoadin, setIsLoadin] = useState("");
 
   const poop = Pdata.LeBron;
 
@@ -17,59 +16,79 @@ export default function Ori() {
   };
 
   const sendy = (event) => {
-    setIsLoadin("")
+    setIsLoadin("");
   };
 
   const soap = Pseudo.find((obj) => {
     return obj.firstName.toLowerCase() === stat;
   });
-  const tone = ()=>{
-    console.log(soap.PPG)
-    setIsLoadin("loaded")
-  }
 
-  const errors = ()=>{
+  const tone = () => {
+    if (soap) {
+      setIsLoadin("loaded");
+    } else if (!soap) {
+      setIsLoadin("error");
+    }
+  };
 
-  }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    tone();
+  };
 
-  const handleSubmit = (event)=>{
-    event.preventDefault()
-    tone()
-  }
-
-  if (isLoadin === "loaded"){
+  if (isLoadin === "error") {
     return (
       <div className="containerr">
-      <form className="dataEntry">
-        <input
-          type="text"
-          className="pData"
-          onChange={sendy}
-          value={stat}
-        ></input>
-      </form>
-      <button className="poise" onClick={tone}>Search</button>
+        <form className="dataEntry" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            className="pData"
+            onChange={sendy}
+            value={stat}
+          ></input>
+        </form>
+        <button className="poise" onClick={tone}>
+          Search
+        </button>
+        <span className="err">errorrrrrrrrrrrrrr</span>
+      </div>
+    );
+  }
 
-       
-      <Card
-      key={poop.id}
-      firstname={soap.firstName}
-      lastname={soap.lastName}
-      attack={poop.attack}
-      defense={poop.defense}
-      stamina={poop.stamina}
-      accuracy={poop.accuracy}
-      passing={poop.passing}
-      handles={poop.handles}
-      overall={poop.overall}
-    />
-    </div>
-    )
+  if (isLoadin === "loaded") {
+    return (
+      <div className="containerr">
+        <form className="dataEntry" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            className="pData"
+            onChange={sendy}
+            value={stat}
+          ></input>
+        </form>
+        <button className="poise" onClick={tone}>
+          Search
+        </button>
+
+        <Card
+          key={poop.id}
+          firstname={soap.firstName}
+          lastname={soap.lastName}
+          attack={poop.attack}
+          defense={poop.defense}
+          stamina={poop.stamina}
+          accuracy={poop.accuracy}
+          passing={poop.passing}
+          handles={poop.handles}
+          overall={poop.overall}
+        />
+      </div>
+    );
   }
 
   return (
-    <div className="containerr">
-      <form className="dataEntry">
+    <div className="containerr" >
+      <form className="dataEntry" onSubmit={handleSubmit}>
         <input
           type="text"
           className="pData"
@@ -77,8 +96,9 @@ export default function Ori() {
           value={stat}
         ></input>
       </form>
-      <button className="poise" onClick={tone}>Search</button>
-
+      <button className="poise" onClick={tone}>
+        Search
+      </button>
     </div>
   );
 }
