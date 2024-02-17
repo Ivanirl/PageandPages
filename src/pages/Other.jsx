@@ -25,7 +25,7 @@ export default function Ori() {
   }
 
   useEffect(()=>{
-    tone();
+    // ;
   }, [])
 
   if (isLoadin){
@@ -53,6 +53,7 @@ export default function Ori() {
           className="pData"
           onChange={send}
           value={stat}
+          onChangeCapture={(e)=> setSearchQuery(e.target.value)}
         ></input>
       </form>
       <button className="poise" onClick={tone}>Search</button>
