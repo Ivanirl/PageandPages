@@ -1,5 +1,4 @@
 import Card from "../components_oriflame/Card";
-import Pdata from "./Data.json";
 
 import { useState, useEffect } from "react";
 import Pseudo from "./NBA_Cards.playercards.json";
@@ -8,7 +7,6 @@ export default function Ori() {
   const [stat, getStat] = useState("");
   const [isLoadin, setIsLoadin] = useState("");
 
-  const poop = Pdata.LeBron;
 
   const send = (event) => {
     getStat(event.target.value);
@@ -71,16 +69,12 @@ export default function Ori() {
         </button>
 
         <Card
-          key={poop.id}
           firstname={soap.firstName}
           lastname={soap.lastName}
           attack={soap.PPG}
           defense={soap.RPG}
           stamina={soap.GPL}
-          // accuracy={poop.accuracy}
           passing={soap.APG}
-          // handles={poop.handles}
-          overall={poop.overall}
         />
       </div>
     );
