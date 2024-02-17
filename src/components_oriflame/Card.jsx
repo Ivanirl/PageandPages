@@ -20,10 +20,7 @@ export default function Card(props) {
               <span className="digit">{props.attack}</span>
               Attack
             </li>
-            <li>
-              <span className="digit">{props.defense}</span>
-              Defense
-            </li>
+
             <li>
               <span className="digit">{props.stamina}</span>
               Stamina
@@ -31,16 +28,12 @@ export default function Card(props) {
           </ul>
           <ul className="rite">
             <li>
-              <span className="digit">{props.accuracy}</span>
-              Accuracy
-            </li>
-            <li>
               <span className="digit">{props.passing}</span>
               Passing
             </li>
             <li>
-              <span className="digit">{props.handles}</span>
-              handles
+              <span className="digit">{props.defense}</span>
+              Defense
             </li>
           </ul>
         </div>
