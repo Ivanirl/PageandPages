@@ -22,9 +22,9 @@ export default function Ori() {
   });
 
   const tone = () => {
-    if (!soap) {
+    if (soap) {
       setIsLoadin("loaded");
-    } else if (soap) {
+    } else if (!soap) {
       setIsLoadin("error");
     }
   };
