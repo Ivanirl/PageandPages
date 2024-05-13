@@ -21,12 +21,10 @@ export default function Ori() {
     return obj.firstName.toLowerCase() === stat;
   });
 
-  soap()
-
   const tone = () => {
-    if (soap) {
+    if (!soap) {
       setIsLoadin("loaded");
-    } else if (!soap) {
+    } else if (soap) {
       setIsLoadin("error");
     }
   };
